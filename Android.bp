@@ -21598,14 +21598,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "system_dlkm_modprobe",
-    owner: "xiaomi",
-    src: "proprietary/vendor/bin/system_dlkm_modprobe.sh",
-    filename: "system_dlkm_modprobe.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "tftp_server",
     owner: "xiaomi",

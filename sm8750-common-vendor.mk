@@ -1091,7 +1091,6 @@ PRODUCT_PACKAGES += \
     ssgqmigd \
     ssgtzd \
     ssr_setup \
-    system_dlkm_modprobe \
     tftp_server \
     thermal-engine-v2 \
     time_daemon \
