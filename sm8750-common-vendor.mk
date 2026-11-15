@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8750-common
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/firmware/evass.b00:$(TARGET_COPY_OUT_ODM)/firmware/evass.b00 \
     vendor/xiaomi/sm8750-common/proprietary/odm/firmware/evass.b01:$(TARGET_COPY_OUT_ODM)/firmware/evass.b01 \
@@ -42,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
-    vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -56,7 +54,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdcservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdcservice.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
-    vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
@@ -173,7 +170,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
@@ -184,7 +180,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/snapdragon_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snapdragon_services.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -258,12 +253,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
@@ -488,7 +481,6 @@ PRODUCT_PACKAGES += \
     libloc_eng_hub \
     libloc_mq_client \
     libloc_qwes_iface \
-    libloc_ril_client \
     libloc_socket \
     libloc_util \
     liblocation_api \
@@ -515,6 +507,7 @@ PRODUCT_PACKAGES += \
     libminkipcbinder_vendor \
     libminksocket_vendor \
     libmisfpsop \
+    libmisight \
     libmisops \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
@@ -885,10 +878,8 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
-    libimscamera_jni \
     libimsmedia_jni \
     libmmosal \
-    libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
     libqcc \
@@ -903,6 +894,7 @@ PRODUCT_PACKAGES += \
     libwfdmmsink \
     libwfdmmsrc_system \
     libwfdnative \
+    libwfdparserlite \
     libwfdrtsp \
     libwfdservice \
     libwfdsinksm \
@@ -921,7 +913,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
@@ -939,9 +931,8 @@ PRODUCT_PACKAGES += \
     uimremoteserver \
     ImsDataChannelService \
     QCC \
-    QtiTelephonyService \
+    QtiTelephony \
     WfdService \
-    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
@@ -997,7 +988,6 @@ PRODUCT_PACKAGES += \
     mwqem-saidl.xml \
     qasr_vintf.xml \
     qcrilhook-saidl.xml \
-    qesdk-manager.xml \
     qms-saidl.xml \
     qspa-modem.xml \
     qtiradio-saidl.xml \
@@ -1086,7 +1076,6 @@ PRODUCT_PACKAGES += \
     ppd \
     qcc-vendor \
     qdcmss \
-    qesdk-manager \
     qguard \
     qmipriod \
     qms \
@@ -1125,12 +1114,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.qvirt-service \
     dpmd \
     qccsyshal_aidl-service \
-    tcmd \
     wfdservice64 \
     android.hardware.gnss-aidl-service-qti
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
