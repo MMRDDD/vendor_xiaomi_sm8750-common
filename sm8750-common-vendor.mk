@@ -419,6 +419,7 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libcv_common \
+    libcxx_shim \
     libdataitems \
     libdemura_oem_plugin \
     libdiag \
@@ -426,6 +427,7 @@ PRODUCT_PACKAGES += \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
+    libdmabufheap_agd \
     libdpps \
     libdrmfs \
     libdrmtime \
@@ -536,6 +538,7 @@ PRODUCT_PACKAGES += \
     libnspsessionservice \
     libnsptransactionservice \
     liboemcrypto \
+    libopencl_loader \
     libops \
     libos \
     libpal_net_if \
@@ -810,6 +813,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.hexlp-V1-ndk \
+    vendor.qti.hardware.hexlp-V2-ndk \
     vendor.qti.hardware.minkipcbinder-V1-ndk \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
@@ -857,6 +861,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
     vendor.qti.snapdragonServices-V1-ndk \
+    vendor.qti.snapdragonServices-V2-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
