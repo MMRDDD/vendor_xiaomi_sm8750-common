@@ -872,6 +872,7 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libSurfaceUtil_jni \
     libdiag_system \
     libdiagatbparser_system \
     libdpmctmgr \

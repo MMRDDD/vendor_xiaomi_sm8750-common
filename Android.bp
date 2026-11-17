@@ -16796,6 +16796,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSurfaceUtil_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libSurfaceUtil_jni.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libgui",
+                "libnativehelper",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdiag_system",
     owner: "xiaomi",
     strip: {
