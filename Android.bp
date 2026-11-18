@@ -360,14 +360,14 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapper@3.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
                 "libbinder_ndk",
                 "libvndksupport",
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libmapperutils",
+                "libgralloctypes",
+                "vendor.qti.hardware.display.mapper@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloc.qti",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libhidlbase",
                 "libutils",
@@ -542,7 +542,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/egl/libq3dtools_esx.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "libcutils",
                 "liblog",
                 "libz",
@@ -1219,7 +1218,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/vulkan.adreno.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "libcutils",
                 "libz",
                 "libadreno_utils",
@@ -1731,7 +1729,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libCB.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "libcutils",
                 "liblog",
                 "libgsl",
@@ -1746,6 +1743,7 @@ cc_prebuilt_library_shared {
                 "libgralloctypes",
                 "vendor.qti.hardware.display.mapper@4.0",
                 "android.hardware.graphics.mapper@4.0",
+                "vendor.qti.hardware.display.mapperextensions@1.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libhidlbase",
                 "vendor.qti.hardware.display.mapper@3.0",
@@ -2418,14 +2416,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libadreno_app_profiles.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "libcutils",
                 "libhardware",
                 "libutils",
                 "libbase",
                 "libbinder_ndk",
                 "vendor.qti.qspmhal-V1-ndk",
-                "vendor.qti.snapdragonServices-V2-ndk",
                 "libqspm-mem-utils-vendor",
                 "libdl",
                 "libz",
@@ -3762,24 +3758,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcxx_shim",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcxx_shim.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdataitems",
     owner: "xiaomi",
     strip: {
@@ -3959,32 +3937,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libdisplaydebug",
                 "libsdmutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdmabufheap_agd",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdmabufheap_agd.so",
-            ],
-            shared_libs: [
-                "libcxx_shim",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -4703,7 +4655,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libgpudataproducer.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "liblog",
                 "libz",
                 "libc++",
@@ -4734,10 +4685,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libz",
                 "libsync",
-                "libdmabufheap_agd",
-                "vendor.qti.hardware.hexlp-V2-ndk",
-                "libbinder_ndk",
-                "libnativewindow",
+                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -5294,7 +5242,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libllvm-glnext.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "libgsl",
                 "liblog",
                 "libc++",
@@ -5321,7 +5268,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libllvm-qcom.so",
             ],
             shared_libs: [
-                "libgsl",
                 "liblog",
                 "libc++",
                 "libc",
@@ -5347,7 +5293,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libllvm-qgl.so",
             ],
             shared_libs: [
-                "libcxx_shim",
                 "libgsl",
                 "liblog",
                 "libc++",
@@ -7234,31 +7179,6 @@ cc_prebuilt_library_shared {
                 "libpower",
                 "libcrypto",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libopencl_loader",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libopencl_loader.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -15291,33 +15211,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.hexlp-V2-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.hexlp-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libnativewindow",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.minkipcbinder-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -16556,31 +16449,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.snapdragonServices-V2-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.snapdragonServices-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
